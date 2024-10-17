@@ -2,7 +2,7 @@ import './App.css'
 
 function App() {
   return (
-    <div className='container'>
+    <div className='lg:max-w-screen-lg md:max-w-screen-md mx-auto'>
       {/* <Header /> */}
       <main>
         {/* <About />
