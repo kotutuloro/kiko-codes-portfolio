@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 export default {
   content: [
     "./index.html",
@@ -18,8 +21,12 @@ export default {
         },
         blue: {
           600: '#2460BA',
-        }
-      }
+        },
+      },
+      fontFamily: {
+        sans: ['"Instrument Sans"', ...defaultTheme.fontFamily.sans],
+        mono: ['"Jetbrains Mono"', ...defaultTheme.fontFamily.mono],
+      },
     },
   },
   plugins: [],
