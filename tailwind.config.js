@@ -33,6 +33,9 @@ export default {
       dropShadow: {
         'title': '0 4px 4px rgba(254, 254, 254, 0.3)',
       },
+      boxShadow: {
+        'section': '0 10px 5px -5px rgba(36, 96, 186, 0.35)',
+      },
     },
   },
   plugins: [],
