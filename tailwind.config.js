@@ -30,6 +30,9 @@ export default {
       borderWidth: {
         '3': '3px',
       },
+      dropShadow: {
+        'title': '0 4px 4px rgba(254, 254, 254, 0.3)',
+      },
     },
   },
   plugins: [],

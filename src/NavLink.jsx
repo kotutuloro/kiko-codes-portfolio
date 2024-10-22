@@ -1,6 +1,6 @@
 function NavLink({ text, link }) {
   return (
-    <li><a href={link}>{text}</a></li>
+    <li className="px-2 last:pr-0"><a href={link}>{text}</a></li>
   )
 }
 
