@@ -2,6 +2,21 @@
 
 const defaultTheme = require('tailwindcss/defaultTheme')
 
+const customColors = {
+  neutral: {
+    50: '#FEFEFE',
+    900: '#101213',
+    950: '#03090A',
+  },
+  purple: {
+    400: '#936BB6',
+    900: '#5D1CB7',
+  },
+  blue: {
+    600: '#2460BA',
+  },
+}
+
 export default {
   content: [
     "./index.html",
@@ -9,20 +24,7 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        neutral: {
-          50: '#FEFEFE',
-          900: '#101213',
-          950: '#03090A',
-        },
-        purple: {
-          400: '#936BB6',
-          900: '#5D1CB7',
-        },
-        blue: {
-          600: '#2460BA',
-        },
-      },
+      colors: customColors,
       fontFamily: {
         sans: ['"Instrument Sans"', ...defaultTheme.fontFamily.sans],
         mono: ['"Jetbrains Mono"', ...defaultTheme.fontFamily.mono],
@@ -31,10 +33,10 @@ export default {
         '3': '3px',
       },
       dropShadow: {
-        'title': '0 4px 4px rgba(254, 254, 254, 0.3)',
+        'title': `0 4px 4px ${customColors.neutral[50]}50`, // 31.25% opacity
       },
       boxShadow: {
-        'section': '0 10px 5px -5px rgba(36, 96, 186, 0.35)',
+        'section': `0 10px 5px -5px ${customColors.blue[600]}50`, // 31.25% opacity
       },
     },
   },
