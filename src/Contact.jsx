@@ -5,19 +5,19 @@ function Contact() {
   const contactInfo = [
     {
       platform: "github",
-      icon: <img src="https://placehold.co/50x50" />,
+      icon: "https://placehold.co/100x100",
       username: "@kotutuloro",
       url: "https://github.com/kotutuloro"
     },
     {
       platform: "email",
-      icon: <img src="https://placehold.co/50x50" />,
+      icon: "https://placehold.co/100x100",
       username: "kiko@kiko.codes",
       url: "mailto:kiko@kiko.codes"
     },
     {
       platform: "linkedin",
-      icon: <img src="https://placehold.co/50x50" />,
+      icon: "https://placehold.co/100x100",
       username: "@kotutuloro",
       url: "https://linkedin.com/in/kotutuloro"
     },
@@ -27,8 +27,8 @@ function Contact() {
 
   return (
     <div>
-      <h1>contact_me</h1>
-      <div>
+      <h1 className="font-mono text-center text-3xl text-purple-400">contact_me</h1>
+      <div className="mt-5 flex flex-wrap justify-center">
         {contactIcons}
       </div>
     </div>
