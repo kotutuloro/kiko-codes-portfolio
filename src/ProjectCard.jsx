@@ -1,7 +1,7 @@
 function ProjectCard({ title, date, summary, image }) {
   return (
     <div className="bg-gradient-to-b from-purple-400 from-70% to-blue-600 p-px rounded-xl">
-      <div className=" bg-neutral-900 rounded-xl overflow-hidden">
+      <div className="hover:blur-sm transition ease-in duration-300 bg-neutral-900 rounded-xl overflow-hidden">
         <img className="rounded-b-xl" src={image} alt={`Screenshot of the project ${title}`} />
         <div className="flex justify-between items-center mx-2.5 mt-2 mb-1">
           <h2 className="font-bold text-xl">{title}</h2>
