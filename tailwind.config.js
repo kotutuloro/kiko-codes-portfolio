@@ -27,6 +27,9 @@ export default {
         sans: ['"Instrument Sans"', ...defaultTheme.fontFamily.sans],
         mono: ['"Jetbrains Mono"', ...defaultTheme.fontFamily.mono],
       },
+      borderWidth: {
+        '3': '3px',
+      },
     },
   },
   plugins: [],
