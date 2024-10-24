@@ -27,7 +27,7 @@ function Contact() {
 
   return (
     <div>
-      <h1 className="font-mono text-center text-3xl text-purple-400">contact_me</h1>
+      <h1 className="font-mono text-center text-3xl text-purple-400">contact&shy;_me</h1>
       <div className="mt-5 flex flex-wrap justify-center">
         {contactIcons}
       </div>

@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+section {
+  hyphenate-character: '\\';
+}
+
+@media (max-width: 639px) {
+  html {
+    font-size: 14px;
+  }
+}

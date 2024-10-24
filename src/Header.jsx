@@ -1,6 +1,12 @@
+import { useState } from "react"
 import NavLink from "./NavLink"
 
 function Header() {
+  const [isNavOpen, setIsNavOpen] = useState(false)
+  function toggleNav() {
+    setIsNavOpen((prevNav) => !prevNav)
+  }
+
   return (
     <header className="flex justify-between items-end bg-neutral-950 px-8 pt-5 pb-2.5">
       <a href="/">
@@ -8,8 +14,11 @@ function Header() {
           Kiko Codes
         </h1>
       </a>
-      <nav className="text-purple-400 text-xl">
-        <ul className="flex divide-x divide-neutral-50">
+      <nav className="relative">
+        <button onClick={toggleNav} className="size-12 md:hidden">
+          <img src="https://placehold.co/100x100" />
+        </button>
+        <ul className={`md:flex md:divide-x md:divide-y-0 md:static ${isNavOpen ? "" : "hidden"} absolute top-14 right-0 bg-neutral-950 divide-y divide-neutral-50`}>
           <NavLink text="about" link="#about" />
           <NavLink text="projects" link="#projects" />
           <NavLink text="resume" link="#" />
