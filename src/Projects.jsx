@@ -6,7 +6,7 @@ function Projects() {
     title: `Project Title ${i + 1}`,
     date: "Sept 2024",
     summary: "some quick project description super fast here just a couple lines maybe even like three lines max here",
-    image: "https://placehold.co/480x300"
+    image: `https://placehold.co/480x${i + 1}00`
   }))
   const projectElems = projectInfo.map(info => <ProjectCard {...info} />)
 
