@@ -17,7 +17,7 @@ function Projects() {
         {projectElems}
       </div>
       <div className="font-mono text-right text-xl">
-        <a href="#" className="underline hover:text-blue-600 transition duration-300">
+        <a href="#" className="underline decoration-purple-400 hover:decoration-neutral-50 hover:text-purple-400 transition duration-300">
           more projects...
         </a>
       </div>

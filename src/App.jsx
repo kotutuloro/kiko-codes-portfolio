@@ -1,4 +1,4 @@
-import './App.css'
+
 import About from './About'
 import Contact from './Contact'
 import Header from './Header'
@@ -7,7 +7,7 @@ import Section from './Section'
 
 function App() {
   return (
-    <div className='border-3 border-neutral-950 rounded-3xl overflow-hidden lg:max-w-screen-lg md:max-w-screen-md mx-auto'>
+    <div style={{ clipPath: "border-box" }} className='border-3 border-neutral-950 rounded-3xl lg:max-w-screen-lg md:max-w-screen-md mx-auto'>
       <Header />
       <main>
         <Section id="about" ChildComponent={About} />
