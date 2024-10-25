@@ -1,5 +1,7 @@
 import { useState } from "react"
 import NavLink from "./NavLink"
+import HamburgerIcon from "./icons/bars-solid.svg?react"
+import CloseIcon from "./icons/xmark-solid.svg?react"
 
 function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false)
@@ -15,8 +17,8 @@ function Header() {
         </h1>
       </a>
       <nav className="relative">
-        <button onClick={toggleNav} className="size-12 md:hidden">
-          <img src="https://placehold.co/100x100" />
+        <button onClick={toggleNav} className="size-12 md:hidden flex items-center">
+          {isNavOpen ? <CloseIcon className="fill-neutral-50" /> : <HamburgerIcon className="fill-neutral-50" />}
         </button>
         <ul className={`md:flex md:divide-x md:divide-y-0 md:static ${isNavOpen ? "" : "hidden"} absolute top-14 right-0 bg-neutral-950 divide-y divide-neutral-50`}>
           <NavLink text="about" link="#about" />
