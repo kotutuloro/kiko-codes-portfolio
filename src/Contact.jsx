@@ -1,23 +1,26 @@
 import ContactIcon from "./ContactIcon"
+import GithubIcon from "./icons/square-github-brands-solid.svg?react"
+import EmailIcon from "./icons/envelope-open-text-solid.svg?react"
+import LinkedinIcon from "./icons/linkedin-brands-solid.svg?react"
 
 function Contact() {
 
   const contactInfo = [
     {
       platform: "github",
-      icon: "https://placehold.co/100x100",
+      Icon: GithubIcon,
       username: "@kotutuloro",
       url: "https://github.com/kotutuloro"
     },
     {
       platform: "email",
-      icon: "https://placehold.co/100x100",
+      Icon: EmailIcon,
       username: "kiko@kiko.codes",
       url: "mailto:kiko@kiko.codes"
     },
     {
       platform: "linkedin",
-      icon: "https://placehold.co/100x100",
+      Icon: LinkedinIcon,
       username: "@kotutuloro",
       url: "https://linkedin.com/in/kotutuloro"
     },
