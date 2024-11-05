@@ -7,17 +7,20 @@ function Header() {
   function toggleNav() {
     setIsNavOpen((prevNav) => !prevNav)
   }
+  function closeNav() {
+    setIsNavOpen(false)
+  }
 
   function NavLink({ text, link }) {
     return (
       <li className="md:px-2 md:py-0 md:last:pr-0 p-5 md:text-xl text-2xl text-purple-400 hover:text-neutral-50 transition duration-300">
-        <a href={link}>{text}</a>
+        <a onClick={closeNav} href={link}>{text}</a>
       </li>
     )
   }
 
   return (
-    <header className="sticky top-0 flex justify-between items-end bg-neutral-950 px-8 pt-5 pb-2.5">
+    <header className="sticky z-50 top-0 flex justify-between items-end bg-neutral-950 px-8 pt-5 pb-2.5">
       <a href="/">
         <h1 className="drop-shadow-title text-5xl font-extralight italic font-mono tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-400 via-65% to-purple-900">
           Kiko Codes
