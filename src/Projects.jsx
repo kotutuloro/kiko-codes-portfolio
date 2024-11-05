@@ -16,11 +16,11 @@ function Projects() {
       <div className="my-5 grid sm:grid-cols-2 gap-5">
         {projectElems}
       </div>
-      <div className="font-mono text-right text-xl">
+      {/* <div className="font-mono text-right text-xl">
         <a href="#" className="underline decoration-purple-400 hover:decoration-neutral-50 hover:text-purple-400 transition duration-300">
           more projects...
         </a>
-      </div>
+      </div> */}
     </div>
   )
 }
