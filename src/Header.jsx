@@ -32,8 +32,8 @@ function Header() {
         </button>
         <ul className={`md:flex md:divide-x md:divide-y-0 md:static ${isNavOpen ? "" : "hidden"} absolute top-14 right-0 bg-neutral-950 divide-y divide-neutral-50`}>
           <NavLink text="about" link="#about" />
+          <NavLink text="experience" link="#experience" />
           <NavLink text="projects" link="#projects" />
-          {/* <NavLink text="resume" link="#" /> */}
           <NavLink text="contact" link="#contact" />
         </ul>
       </nav>
