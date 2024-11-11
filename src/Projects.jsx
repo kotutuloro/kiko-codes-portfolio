@@ -27,8 +27,7 @@ function Projects({ openModal, setModalContent }) {
     )
   }
 
-  const projectElems = projectInfo.map(info => <ProjectCard {...info} />)
-
+  const projectElems = projectInfo.map(info => <ProjectCard key={info.title} {...info} />)
   return (
     <div>
       <h1 className="font-mono text-center text-3xl text-purple-400">project&shy;_highlights</h1>

@@ -43,7 +43,7 @@ function Contact() {
     )
   }
 
-  const contactIcons = contactInfo.map(info => <ContactIcon {...info} />)
+  const contactIcons = contactInfo.map(info => <ContactIcon key={info.platform} {...info} />)
   return (
     <div>
       <h1 className="font-mono text-center text-3xl text-purple-400">contact&shy;_me</h1>
