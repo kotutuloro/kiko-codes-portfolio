@@ -21,7 +21,7 @@ function Header() {
 
   return (
     <header className="sticky z-50 top-0 flex justify-between items-end bg-neutral-950 px-8 pt-5 pb-2.5">
-      <a href="/">
+      <a href="#">
         <h1 className="drop-shadow-title text-5xl font-extralight italic font-mono tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-400 via-65% to-purple-900">
           Kiko Codes
         </h1>
