@@ -13,6 +13,10 @@ function App() {
   const [showModal, setShowModal] = useState(false)
   const [modalContent, setModalContent] = useState('')
 
+  const modalProps = {
+    openModal: () => setShowModal(true),
+    setModalContent: setModalContent,
+  }
   return (
     <>
       <Modal show={showModal} close={() => setShowModal(false)} content={modalContent} />
@@ -21,7 +25,7 @@ function App() {
         <main>
           <Section id="about" ChildComponent={About} />
           <Section id="experience" ChildComponent={Experience} />
-          <Section id="projects" ChildComponent={Projects} />
+          <Section id="projects" ChildComponent={Projects} childProps={modalProps} />
           <Section id="contact" ChildComponent={Contact} />
         </main>
         <Footer />
