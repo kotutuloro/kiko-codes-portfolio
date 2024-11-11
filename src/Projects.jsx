@@ -1,7 +1,21 @@
-import ProjectCard from "./ProjectCard"
 import projectInfo from "./projects.json"
 
 function Projects() {
+  function ProjectCard({ title, date, summary, image }) {
+    return (
+      <div className="bg-gradient-to-b from-purple-400 from-70% to-blue-600 p-px rounded-xl">
+        <article className="hover:blur-sm h-full transition ease-in duration-300 bg-neutral-900 rounded-xl overflow-hidden">
+          <img className="rounded-b-xl" src={image} alt={`Screenshot of the project ${title}`} />
+          <div className="flex justify-between items-end gap-2 mx-2.5 mt-2 mb-1">
+            <h2 className="font-bold text-xl text-left">{title}</h2>
+            <h3 className="italic text-right">{date}</h3>
+          </div>
+          <p className="text-center leading-tight mx-2.5 mb-2.5">{summary}</p>
+        </article>
+      </div>
+    )
+  }
+
   const projectElems = projectInfo.map(info => <ProjectCard {...info} />)
 
   return (
@@ -10,11 +24,6 @@ function Projects() {
       <div className="my-5 grid sm:grid-cols-2 gap-5">
         {projectElems}
       </div>
-      {/* <div className="font-mono text-right text-xl">
-        <a href="#" className="underline decoration-purple-400 hover:decoration-neutral-50 hover:text-purple-400 transition duration-300">
-          more projects...
-        </a>
-      </div> */}
     </div>
   )
 }
