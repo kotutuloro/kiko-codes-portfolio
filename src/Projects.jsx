@@ -1,13 +1,7 @@
 import ProjectCard from "./ProjectCard"
+import projectInfo from "./projects.json"
 
 function Projects() {
-  // placeholder project info until i have some to highlight here
-  const projectInfo = Array.from({ length: 4 }, (_, i) => ({
-    title: `Even Longer Project Title ${i + 1}`,
-    date: "Sept 2024",
-    summary: "some quick project description super fast here just a couple lines maybe even like three lines max here",
-    image: `https://placehold.co/480x${i + 1}00`
-  }))
   const projectElems = projectInfo.map(info => <ProjectCard {...info} />)
 
   return (
