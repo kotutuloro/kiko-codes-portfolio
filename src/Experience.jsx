@@ -7,22 +7,36 @@ function Experience() {
         <div>
           <h2 className="font-mono italic text-xl underline decoration-dotted decoration-purple-400">skills</h2>
           <ul className="leading-snug">
-            <li>asdf sadfk</li>
-            <li>asdf sad asdf aasdf asdf asdfadsf aslkdfjalskdfj fk</li>
-            <li>asdf sadfk</li>
-            <li>asdf saasdf  a dfk</li>
-            <li>asdf sadfk</li>
-            <li>asdf saa asdf a dfk</li>
+            <li>Python</li>
+            <li>Ruby</li>
+            <li>Go</li>
+            <li>PostgreSQL</li>
+            <li>Redis</li>
+            <li>Web Development</li>
+            <li>Scripting</li>
+            <li>Distributed systems</li>
           </ul>
         </div>
 
         <div className="basis-2/3 grow shrink-0">
           <h2 className="font-mono italic text-xl underline decoration-dotted decoration-purple-400">employment</h2>
           <ul className="leading-snug *:py-1 *:flex *:justify-between *:items-center *:gap-2 first:*:*:text-left last:*:*:text-right last:*:*:italic">
-            <li><span>job title @ some place</span><span>dates</span></li>
-            <li><span>job title @ some place</span><span>dates</span></li>
-            <li><span>job title @ some place</span><span>dates</span></li>
-            <li><span>job title @ some place</span><span>dates</span></li>
+            <li>
+              <span>Senior Software Engineer @ Flexport</span>
+              <span>(Sep 2023 - Mar 2024)</span>
+            </li>
+            <li>
+              <span>Senior Software Engineer @ Heroku</span>
+              <span>(Feb 2021 - Mar 2023)</span>
+            </li>
+            <li>
+              <span>Software Engineer @ Heroku</span>
+              <span>(Dec 2017 - Feb 2021)</span>
+            </li>
+            <li>
+              <span>Teaching Assistant @ Hackbright Academy</span>
+              <span>(Mar 2017 - Nov 2017)</span>
+            </li>
           </ul>
         </div>
 
