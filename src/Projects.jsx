@@ -18,7 +18,7 @@ function Projects({ openModal, setModalContent }) {
         <article onClick={showProjectModal} className="hover:blur-sm cursor-pointer h-full transition ease-in duration-300 bg-neutral-900 rounded-xl overflow-hidden">
           <img className="rounded-b-xl" src={image} alt={`Screenshot of the project ${title}`} />
           <div className="flex justify-between items-end gap-2 mx-2.5 mt-2 mb-1">
-            <h2 className="font-bold text-xl text-left underline decoration-dotted">{title}</h2>
+            <h2 className="font-bold text-xl text-left underline decoration-dotted decoration-purple-400">{title}</h2>
             <h3 className="italic text-right">{date}</h3>
           </div>
           <p className="text-center leading-tight mx-2.5 mb-2.5">{summary}</p>
