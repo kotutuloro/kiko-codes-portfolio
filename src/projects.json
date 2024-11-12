@@ -1,0 +1,20 @@
+[
+    {
+        "title": "tropikiko @ neocities",
+        "date": "Sep 2024",
+        "summary": "A quick personal mini-blog and an exercise in fun simple front-end development and expression",
+        "image": "/projects/neocities.png"
+    },
+    {
+        "title": "BFA Submission Bot",
+        "date": "Jul 2021",
+        "summary": "A Discord bot and web app that tracks member submissions for weekly challenges in Black Flag Academy (a Dance Dance Revolution Discord)",
+        "image": "/projects/bfa-submission.png"
+    },
+    {
+        "title": "Consa",
+        "date": "Mar 2017",
+        "summary": "A web app for concert-lovers to discover nearby shows for artists using recommendations based on their Spotify listening history",
+        "image": "/projects/consa.gif"
+    }
+]
