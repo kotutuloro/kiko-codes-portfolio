@@ -1,4 +1,4 @@
-// import resume from "/docs/Kiko Otutuloro Resume Fall 2024.pdf";
+import resume from "/docs/Kiko Otutuloro Resume Fall 2024.pdf";
 
 function Experience() {
   return (
@@ -43,6 +43,13 @@ function Experience() {
               <span>(Mar 2017 - Nov 2017)</span>
             </li>
           </ul>
+          <a
+            className="text-xl italic text-purple-400 underline decoration-neutral-50 transition duration-300 hover:text-neutral-50 hover:decoration-purple-400"
+            href={resume}
+            target="_blank"
+          >
+            resume.pdf
+          </a>
         </div>
       </div>
     </div>
