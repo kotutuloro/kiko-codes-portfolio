@@ -1,22 +1,24 @@
-import { useState } from "react"
-import HamburgerIcon from "./icons/bars-solid.svg?react"
-import CloseIcon from "./icons/xmark-solid.svg?react"
+import { useState } from "react";
+import HamburgerIcon from "./icons/bars-solid.svg?react";
+import CloseIcon from "./icons/xmark-solid.svg?react";
 
 function Header() {
-  const [isNavOpen, setIsNavOpen] = useState(false)
+  const [isNavOpen, setIsNavOpen] = useState(false);
   function toggleNav() {
-    setIsNavOpen((prevNav) => !prevNav)
+    setIsNavOpen((prevNav) => !prevNav);
   }
   function closeNav() {
-    setIsNavOpen(false)
+    setIsNavOpen(false);
   }
 
   function NavLink({ text, link }) {
     return (
       <li className="md:px-2 md:py-0 md:last:pr-0 p-5 md:text-xl text-2xl text-purple-400 hover:text-neutral-50 transition duration-300">
-        <a onClick={closeNav} href={link}>{text}</a>
+        <a onClick={closeNav} href={link}>
+          {text}
+        </a>
       </li>
-    )
+    );
   }
 
   return (
@@ -27,10 +29,19 @@ function Header() {
         </h1>
       </a>
       <nav className="relative">
-        <button onClick={toggleNav} className="size-12 md:hidden flex items-center">
-          {isNavOpen ? <CloseIcon className="fill-neutral-50" /> : <HamburgerIcon className="fill-neutral-50" />}
+        <button
+          onClick={toggleNav}
+          className="size-12 md:hidden flex items-center"
+        >
+          {isNavOpen ? (
+            <CloseIcon className="fill-neutral-50" />
+          ) : (
+            <HamburgerIcon className="fill-neutral-50" />
+          )}
         </button>
-        <ul className={`md:flex md:divide-x md:divide-y-0 md:static ${isNavOpen ? "" : "hidden"} absolute top-14 right-0 bg-neutral-950 divide-y divide-neutral-50`}>
+        <ul
+          className={`md:flex md:divide-x md:divide-y-0 md:static ${isNavOpen ? "" : "hidden"} absolute top-14 right-0 bg-neutral-950 divide-y divide-neutral-50`}
+        >
           <NavLink text="about" link="#about" />
           <NavLink text="experience" link="#experience" />
           <NavLink text="projects" link="#projects" />
@@ -38,7 +49,7 @@ function Header() {
         </ul>
       </nav>
     </header>
-  )
+  );
 }
 
-export default Header
+export default Header;

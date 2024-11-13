@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 section h1 {
-  hyphenate-character: '\\';
+  hyphenate-character: "\\";
 }
 
 @media (max-width: 639px) {
