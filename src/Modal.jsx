@@ -14,7 +14,7 @@ function Modal({ show, close, content }) {
 
       <div className="fixed inset-0 z-10 w-screen overflow-y-auto">
         <div className="flex min-h-full items-center justify-center p-4 text-center">
-          <div className="bg-neutral-950 rounded-lg p-6">{content}</div>
+          <div className="rounded-lg bg-neutral-950 p-6">{content}</div>
         </div>
       </div>
     </div>

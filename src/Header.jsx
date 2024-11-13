@@ -13,7 +13,7 @@ function Header() {
 
   function NavLink({ text, link }) {
     return (
-      <li className="md:px-2 md:py-0 md:last:pr-0 p-5 md:text-xl text-2xl text-purple-400 hover:text-neutral-50 transition duration-300">
+      <li className="p-5 text-2xl text-purple-400 transition duration-300 hover:text-neutral-50 md:px-2 md:py-0 md:text-xl md:last:pr-0">
         <a onClick={closeNav} href={link}>
           {text}
         </a>
@@ -22,16 +22,16 @@ function Header() {
   }
 
   return (
-    <header className="sticky z-10 top-0 flex justify-between items-end bg-neutral-950 px-8 pt-5 pb-2.5">
+    <header className="sticky top-0 z-10 flex items-end justify-between bg-neutral-950 px-8 pb-2.5 pt-5">
       <a href="#">
-        <h1 className="drop-shadow-title text-5xl font-extralight italic font-mono tracking-wider bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-400 via-65% to-purple-900">
+        <h1 className="bg-gradient-to-r from-blue-600 via-purple-400 via-65% to-purple-900 bg-clip-text font-mono text-5xl font-extralight italic tracking-wider text-transparent drop-shadow-title">
           Kiko Codes
         </h1>
       </a>
       <nav className="relative">
         <button
           onClick={toggleNav}
-          className="size-12 md:hidden flex items-center"
+          className="flex size-12 items-center md:hidden"
         >
           {isNavOpen ? (
             <CloseIcon className="fill-neutral-50" />
@@ -40,7 +40,7 @@ function Header() {
           )}
         </button>
         <ul
-          className={`md:flex md:divide-x md:divide-y-0 md:static ${isNavOpen ? "" : "hidden"} absolute top-14 right-0 bg-neutral-950 divide-y divide-neutral-50`}
+          className={`md:static md:flex md:divide-x md:divide-y-0 ${isNavOpen ? "" : "hidden"} absolute right-0 top-14 divide-y divide-neutral-50 bg-neutral-950`}
         >
           <NavLink text="about" link="#about" />
           <NavLink text="experience" link="#experience" />

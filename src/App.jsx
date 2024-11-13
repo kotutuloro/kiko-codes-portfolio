@@ -25,7 +25,7 @@ function App() {
       />
       <div
         style={{ clipPath: "border-box" }}
-        className="border-3 border-neutral-950 rounded-3xl lg:max-w-screen-lg md:max-w-screen-md mx-auto"
+        className="mx-auto rounded-3xl border-3 border-neutral-950 md:max-w-screen-md lg:max-w-screen-lg"
       >
         <Header />
         <main>

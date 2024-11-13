@@ -2,8 +2,8 @@ import myPhoto from "./assets/picrew2.png";
 
 function About() {
   return (
-    <div className="max-w-2xl mx-auto flex flex-wrap-reverse gap-6 items-center justify-center text-center">
-      <div className="basis-7/12 grow shrink-0">
+    <div className="mx-auto flex max-w-2xl flex-wrap-reverse items-center justify-center gap-6 text-center">
+      <div className="shrink-0 grow basis-7/12">
         <p>
           Hiya! I'm Kiko, a software developer with 7+ years in the industry.
           Most of my experience is in back-end web development and distributed
@@ -14,14 +14,14 @@ function About() {
           Check out some of the{" "}
           <a
             href="#projects"
-            className="underline decoration-purple-400 hover:decoration-neutral-50 hover:text-purple-400 transition duration-300"
+            className="underline decoration-purple-400 transition duration-300 hover:text-purple-400 hover:decoration-neutral-50"
           >
             projects
           </a>{" "}
           I've worked on, and{" "}
           <a
             href="#contact"
-            className="underline decoration-purple-400 hover:decoration-neutral-50 hover:text-purple-400 transition duration-300"
+            className="underline decoration-purple-400 transition duration-300 hover:text-purple-400 hover:decoration-neutral-50"
           >
             contact me
           </a>{" "}
@@ -31,7 +31,7 @@ function About() {
       <img
         src={myPhoto}
         alt="Kiko's headshot"
-        className="rounded-full size-52"
+        className="size-52 rounded-full"
       />
     </div>
   );

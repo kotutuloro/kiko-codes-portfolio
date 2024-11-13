@@ -35,10 +35,10 @@ function Contact() {
     const showOnSelect = selectedContact == platform ? "visible" : "invisible";
 
     return (
-      <div className="group w-24 flex flex-col gap-2 items-center font-mono *:transition *:duration-500">
+      <div className="group flex w-24 flex-col items-center gap-2 font-mono *:transition *:duration-500">
         <a
           onMouseOver={selectThis}
-          className="peer order-2 hover:blur-sm size-12 flex items-center"
+          className="peer order-2 flex size-12 items-center hover:blur-sm"
           target="_blank"
           href={url}
         >
@@ -55,10 +55,10 @@ function Contact() {
   ));
   return (
     <div>
-      <h1 className="font-mono text-center text-3xl text-purple-400">
+      <h1 className="text-center font-mono text-3xl text-purple-400">
         contact&shy;_me
       </h1>
-      <div className="mt-5 flex max-[320px]:flex-col items-center justify-center">
+      <div className="mt-5 flex items-center justify-center max-[320px]:flex-col">
         {contactIcons}
       </div>
     </div>
