@@ -1,10 +1,13 @@
 function Experience() {
+  const resumeLink =
+    "https://drive.google.com/file/d/1Z8rJ-rAlPncYe9oT-j2vEtVF1mD9tlKF/view";
+
   return (
     <div className="text-center">
       <h1 className="font-mono text-3xl text-purple-400">exp&shy;erience</h1>
       <div className="divide-dotted *:my-4 md:flex md:divide-x-2 *:md:px-4 *:lg:px-8">
         <div>
-          <h2 className="font-mono text-xl italic underline decoration-purple-400 decoration-dotted">
+          <h2 className="font-mono text-2xl italic underline decoration-purple-400 decoration-dotted">
             skills
           </h2>
           <ul className="leading-snug">
@@ -20,10 +23,10 @@ function Experience() {
         </div>
 
         <div className="shrink-0 grow basis-2/3">
-          <h2 className="font-mono text-xl italic underline decoration-purple-400 decoration-dotted">
+          <h2 className="font-mono text-2xl italic underline decoration-purple-400 decoration-dotted">
             employment
           </h2>
-          <ul className="leading-snug *:flex *:items-center *:justify-between *:gap-2 *:py-1 first:*:*:text-left last:*:*:text-right last:*:*:italic">
+          <ul className="grid gap-2 leading-snug *:col-span-2 *:grid *:grid-cols-subgrid *:items-center first:*:*:text-left last:*:*:text-right last:*:*:italic">
             <li>
               <span>Senior Software Engineer @ Flexport</span>
               <span>(Sep 2023 - Mar 2024)</span>
@@ -41,6 +44,13 @@ function Experience() {
               <span>(Mar 2017 - Nov 2017)</span>
             </li>
           </ul>
+          <a
+            className="text-xl italic text-purple-400 underline decoration-neutral-50 transition duration-300 hover:text-neutral-50 hover:decoration-purple-400"
+            href={resumeLink}
+            target="_blank"
+          >
+            resume.pdf
+          </a>
         </div>
       </div>
     </div>
