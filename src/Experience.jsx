@@ -1,6 +1,5 @@
 function Experience() {
-  const resumeLink =
-    "https://drive.google.com/file/d/1Z8rJ-rAlPncYe9oT-j2vEtVF1mD9tlKF/view";
+  const resumeLink = "https://resume.kiko.codes";
 
   return (
     <div className="text-center">
